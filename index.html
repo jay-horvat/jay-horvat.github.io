@@ -1,1 +1,275 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Berserk BJJ</title>
+
+    <!--Style adjustments-->
+    <style>
+        .carousel img {
+            height: 600px;
+            width: auto;
+        }
+        .bg-red {
+            background-color: #ec2f00ba;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <!-- Top header with cart and login deatils -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/logo.png" alt="Logo" style="width:50px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        
+        <!-- Site logo -->  
+        <div class="container-fluid">
+            <a href="index.html">
+            <img src="IMG/logo.png" alt="Berserk BJJ Logo" class="mx-auto d-block" class="img-fliud" height="250px">
+            </a>
+        </div>
+        
+        <!-- Shopping navigation menu -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="kimono.html">Kimonos</a>
+                  <a class="dropdown-item" href="rashguard.html">Rash Guards</a>
+                  <a class="dropdown-item" href="accessory.html">Accessories aand Apparel</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>      
+        {% block head %}{% endblock %}    
+    </header>
+
+    <!-- Promotional carousel -->
+    <div class="container-fluid bg-dark text-white">
+        <!--Carasoul-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="IMG/shopkimono.png" alt="Buy Kimonos" class="mx-auto d-block" class="img-fliud">
+                    <div class="carousel-caption">
+                        <a href="kimono.html" class="btn btn-info btn-dark" role="button">Shop Kimono</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <img src="IMG/shopnogi.png" alt="Buy Rash Guards" class="mx-auto d-block" class="img-fliud">
+                    <div class="carousel-caption">
+                        <a href="rashguard.html" class="btn btn-info btn-dark" role="button">Shop Rash Guards</a>
+                    </div>
+                </div>    
+                <div class="carousel-item">
+                <img src="IMG/shopacces.png" alt="Buy accessories and apparel" class="mx-auto d-block" class="img-fliud">
+                    <div class="carousel-caption">
+                        <a href="accessory.html" class="btn btn-info btn-dark" role="button">Shop Accessories and Apparel</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--Subscribe banner-->
+    <div class="container-fluid bg-red">
+        <div class="row justify-content-center">
+            <h2>Sign up for the lastest Deals!</h2>
+        </div>
+        <div class="row justify-content-center">
+            <form class="form-inline mb-2" action="/action_page.php">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <button type="submit" class="btn btn-primary btn-dark">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+<!--Items displayed on main screen-->
+<h1 class="text-center mt-2">All Products</h1>   
+
+<!--Filtering and search menu-->
+    <ul class="nav nav-pills justify-content-center mt-3">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Size</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Small</label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Medium</label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Large</label>
+                        </div>
+                </a>
+            </a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Product</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                  <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Kimono</label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Rash Guards</label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Accessories and Apparel</label>
+                    </div>
+              </a>
+            </a>
+            </div>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </ul>
+ 
+
+<!--Items displayed on main screen-->
+    <div class="container-fluid">
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+                <div class="container mt-2">
+                    <div class="card">
+                        <a href="product_kimono.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/gi1.png" alt="Card image" style="width:60%"></a>
+                        <div class="card-body">
+                            <a href="product_kimono.html"><h4 class="card-title">Kimono 1</h4></a>
+                            <p>$199.99</p>
+                        </div>
+                    </div>
+                </div>
+            </br>
+            </li>
+            <li class="list-group-item">
+                <div class="container mt-2">
+                    <div class="card">
+                        <a href="product_kimono.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/gi2.png" alt="Card image" style="width:60%"></a>
+                        <div class="card-body">
+                            <a href="product_kimono.html"><h4 class="card-title">Kimono 2</h4></a>
+                            <p>$199.99</p>
+                        </div>
+                    </div>
+                </div>
+            </br>
+            </li>
+            <li class="list-group-item">
+                <div class="container mt-2">
+                    <div class="card">
+                        <a href="product_rashguard.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/rashy1.png" alt="Card image" style="width:60%"></a>
+                        <div class="card-body">
+                            <a href="product_rashguard.html"><h4 class="card-title">Rash Guard 1</h4></a>
+                            <p>$79.99</p>
+                        </div>
+                    </div>
+                </div>
+            </br>
+            </li>
+        </ul>
+    </div>
+</br>
+<div class="container-fluid">
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">
+            <div class="container mt-2">
+                <div class="card">
+                    <a href="product_rashguard.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/rashy2.png" alt="Card image" style="width:60%"></a>
+                    <div class="card-body">
+                        <a href="product_rashguard.html"><h4 class="card-title">Rash Guard 2</h4></a>
+                        <p>$79.99</p>
+                    </div>
+                </div>
+            </div>
+        </br>
+        </li>
+        <li class="list-group-item">
+            <div class="container mt-2">
+                <div class="card">
+                    <a href="product_accessory.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/accessory1.png" alt="Card image" style="width:60%"></a>
+                    <div class="card-body">
+                        <a href="product_accessory.html"><h4 class="card-title">Accessory 1</h4></a>
+                        <p>$59.99</p>
+                    </div>
+                </div>
+            </div>
+        </br>
+        </li>
+        <li class="list-group-item">
+            <div class="container mt-2">
+                <div class="card">
+                    <a href="product_accessory.html"><img class="card-img-top img-fluid mx-auto d-block" src="IMG/accessory2.png" alt="Card image" style="width:60%"></a>
+                    <div class="card-body">
+                        <a href="product_accessory.html"><h4 class="card-title">Accessory 2</h4></a>
+                        <p>$59.99</p>
+                    </div>
+                </div>
+            </div>
+        </br>
+        </li>
+    </ul>
+</div>
+</br>
+<!-- Footer of the website -->
+<footer class="footer">
+    <div class="text-center py-2 bg-dark">
+        <span class="text-light">Copyright &copy; 2023</span>
+    </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
