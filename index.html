@@ -29,13 +29,39 @@
         </nav>
     </header>
 
-    <section class="text-center text-white py-20">
+    <!-- About Me Section -->
+    <section class="w-full flex flex-col justify-center items-center text-center text-white py-20">
         <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
             About me.</h1>
-        <p>This will be an about section with a photo and blurb.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <img src="./IMG/me.png" class="max-w-full max-h-64 rounded-full">
+            </div>
+            <div>
+                <p>This will be an about section with a photo and blurb.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Qualifications Section -->
+    <section class="text-center text-white py-20">
+        <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
+            Qualifications and Skills.</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <h2>Qualifications</h2>
+            </div>
+            <div>
+                <h2>Skills</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="w-full flex flex-col justify-center items-center gap-8">
+        <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
+            Projects
+        </h1>
         <div class="py-5 px-8 bg-white shadow-2xl rounded-2xl w-full md:w-4/5 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="video-content">
                 <img src="./IMG/gi1.png" class="max-w-full max-h-64">
