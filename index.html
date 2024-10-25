@@ -4,6 +4,8 @@
     <link href="./dist/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Website</title>
@@ -30,7 +32,7 @@
     </header>
 
     <!-- About Me Section -->
-    <section class="w-full flex flex-col items-center text-white py-10 max-w-screen-xl mx-auto">
+    <section class="w-full flex flex-col items-center text-white py-10 max-w-screen-lg mx-auto">
         <!--<h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
             About me.</h1>-->
         <div class="grid grid-cols-5 gap-4 md:grid-cols-5">
@@ -38,37 +40,150 @@
                 <img src="./IMG/me.png" class="max-w-full max-h-16 rounded-full">
             </div>
             <div class="col-span-4 flex justify-center">
-                <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-6xl font-bold mb-4">
+                <h1 class="bg-gradient-to-r from-teal-600 to-sky-600 bg-clip-text text-transparent text-6xl font-bold mb-4">
                     Hi, I'm Jay Horvat.</h1>
             </div>
         </div>
+        <div>
+            <h1 class="text-xl font-bold mb-4">
+                Full Stack Software Engineer</h1>
+        </div><br>
         <div class="justify-left">
-            <p>I am passionate about solving problems and leveraging technology to do so. I have </p>
-            <!--programming and development experience of about 2 years
-            a background as a civil engineer, so very comfortable with high level math and scientitif and engineering concepts
-            In recent years worked as a high school math, physics and engineering teacher so communicating complex concepts, especially to non technical audiences, is a highly developed skill of mine
-            I found a passion in programming and software development and eager to get a positon with a company who is going to fuel that progrsss
-            In the meantime I am applying and expanding my developemtn skills through building an ecommerce software product, shoppie.
-            Here I act as the founder and the sole and lead software developer working in all aspects of full stack development.-->
-            <p> Predominant dev experience is from... </p> 
-            <p>Have worked on a variety of projects in my graduate degree that...</p>   
+            <p>I am a passionate problem solver and I love using software, math and other technologies to create solutions to complex and interesting problems.</p><br>
+            <p>I am a proficient programmer and I am comfortable using a variety of modern, object-orientated languages. I have hands on experience in full stack development and can use a variety of modern and industry standard technology stacks.
+            I currently spend most of my time working on Shoppie. Shoppie is an ecommerce software product built using React, TypeScript, Express and MySQL. I am the sole developer building Shoppie and carry out all aspects of its development.</p>
+            <br>
+            <p>Whilst full stack web development is my key area of experience I am also confident performing data analysis using Python and its various libraries. 
+                Although my experience is not extensive in this area my understanding of Python and mathematics make data analytics an exciting field for me and in 
+                the past I have enojyed carying out both descriptive and predictive analysis of various large data sets using libraries such as Pandas, NumPy, Matplotlib, Seaborn and Scikitlearn. </p>
+            <!--
+                <br>
+            <p>👉 I have had two previous careers. Firstly, as a civil engineer, and then as a high school teacher - teaching math, physics and engineering.</p>
+            <p>👉 I have proven experience working in many teams and with a large variety of stakeholders. I find it easy to communicate, work effectively and produce high quality work with a large range of people.</p>
+                -->
         </div>
     </section>
-    <br>
 
-    <!-- Qualifications Section -->
-    <section class="bg-white w-full flex flex-col items-center gap-8 py-8 max-w-screen-xl rounded-2xl mx-auto">
-        <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
-            Qualifications and Skills.</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2">
-            <div>
-                <h2>Qualifications</h2>
-            </div>
-            <div>
-                <h2>Skills</h2>
+<!-- Qualifications Section -->
+<section class="w-full flex flex-col items-center gap-8 py-8 max-w-screen-xl rounded-2xl mx-auto">
+    <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold">
+        Education and Software Skills</h1>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 w-full px-4">
+        <!-- Qualifications Column -->
+        <div class="col-span-2">
+            <h2 class="text-2xl text-white font-semibold mb-4">Education</h2>
+            <div class="flex flex-col gap-4">
+                <!-- Degree Card 1 -->
+                <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="./IMG/qut.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-lg font-bold">Graduate Diploma in Computer Science</h3>
+                        <p class="text-sm text-gray-500">Queensland University of Technology</p>
+                        <p class="text-sm text-gray-400">October 2023 – October 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Degree Card 2 -->
+                <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="./IMG/jcu.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-lg font-bold">Bachelor of Engineering with Honours (Civil)</h3>
+                        <p class="text-sm text-gray-500">James Cook University</p>
+                        <p class="text-sm text-gray-400">January 2011 – November 2014</p>
+                    </div>
+                </div>
+
+                <!-- Degree Card 3 -->
+                <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="./IMG/une.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-lg font-bold">Master of Teaching (Secondary)</h3>
+                        <p class="text-sm text-gray-500">University of New England</p>
+                        <p class="text-sm text-gray-400">January 2018 – November 2019</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Skills Column -->
+        <div class="col-span-3">
+            <h2 class="text-2xl font-semibold text-white mb-4">Software Skills</h2>
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4 bg-gray-50 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold text-black mb-1 p-1">Programming</h2>
+                    <div class="flex flex-wrap items-center gap-4 p-2">
+                        <div class="bg-yellow-300 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <img src="./IMG/python.png" alt="Python" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            <p>Python</p>
+                        </div>
+                        <div class="bg-violet-400 flex items-center gap-1 p-1 w-20 rounded-lg shadow-lg">
+                            <img src="./IMG/csharp.png" alt="C# Logo" class="w-12 h-12 object-cover rounded-lg">
+                            <p>C#</p>
+                        </div>
+                        <div class="bg-yellow-300 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <img src="./IMG/js.png" alt="JavaScript" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="bg-blue-500 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <img src="./IMG/ts.png" alt="TypeScript" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="bg-blue-300 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <img src="./IMG/sql.png" alt="SQL" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            <p>SQL</p>
+                        </div>
+                        <div class="bg-orange-500 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <img src="./IMG/html.png" alt="HTML" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            <p>HTML</p>
+                        </div>
+                        <div class="bg-blue-400 flex items-center gap-1 p-1 rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/css.png" alt="CSS" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-gray-50 rounded-lg shadow-lg">
+                    <h2 class="text-xl w-40 font-semibold text-black mb-1 p-1">Development Technologies</h2>
+                    <div class="flex flex-wrap items-center gap-4 p-2">
+                        <div class="bg-blue-300 flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/react.png" alt="React" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p>React</p>
+                        </div>
+                        <div class="bg-green-600 flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/nodejs.png" alt="React" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="bg-gray-800 flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/express.png" alt="React" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p class="text-white">Express.js</p>
+                        </div>
+                        <div class="bg-gray-800 flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/flask.png" alt="React" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p class="text-white">Flask</p>
+                        </div>
+                        <div class="bg-orange-400 flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
+                            <div class="bg-white rounded-lg">
+                                <img src="./IMG/mysql.png" alt="MySql" class="w-12 h-12 object-cover rounded-lg border border-black">
+                            </div>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <br>
     <br>
 
