@@ -16,10 +16,7 @@
         <nav>
             <ul class="flex justify-between items-center px-30">
                 <div class="flex space-x-4">
-                    <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
                     <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
-                    <li><a href="#about" class="hover:text-blue-400">About</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
                 </div>
                 <div class="flex space-x-4">
                     <li><a href="https://www.linkedin.com/in/jaydhorvat/" target="_blank" class="text-white hover:text-blue-400 justify-end"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -33,37 +30,28 @@
     </header>
 
     <!-- About Me Section -->
-    <section class="w-full flex flex-col items-center text-white py-10 max-w-screen-lg mx-auto">
-        <!--<h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold mb-4">
-            About me.</h1>-->
-        <div class="grid grid-cols-5 gap-4 md:grid-cols-5">
-            <div class="col-span-1 flex justify-center">
-                <img src="./IMG/me.png" class="max-w-full max-h-16 rounded-full">
+    <section class="w-full flex flex-col items-center text-white py-10 max-w-screen-xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center w-full max-w-4xl mx-auto">
+            <div class="flex justify-center md:col-span-1">
+                <img src="./IMG/me.png" class="w-32 h-32 rounded-full">
             </div>
-            <div class="col-span-4 flex justify-center">
-                <h1 class="bg-gradient-to-r from-teal-600 to-sky-600 bg-clip-text text-transparent text-6xl font-bold mb-4">
-                    Hi, I'm Jay Horvat.</h1>
+            
+            <div class="flex flex-col md:col-span-4 items-start">
+                <h1 class="bg-gradient-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent text-6xl font-bold mb-4 text-left">
+                    Hi, I'm Jay Horvat.
+                </h1>
+                <h2 class="text-xl font-bold mb-4 text-left">
+                    Full Stack Software Engineer
+                </h2>
             </div>
         </div>
-        <div>
-            <h1 class="text-xl font-bold mb-4">
-                Full Stack Software Engineer</h1>
-        </div><br>
-        <div class="justify-left">
-            <p>I am a passionate problem solver and I love using software, math and other technologies to create solutions to complex and interesting problems.</p><br>
-            <p>I am a proficient programmer and I am comfortable using a variety of modern, object-orientated languages. I have hands on experience in full stack development and can use a variety of modern and industry standard technology stacks.
-            I currently spend most of my time working on Shoppie. Shoppie is an ecommerce software product built using React, TypeScript, Express and MySQL. I am the sole developer building Shoppie and carry out all aspects of its development.</p>
-            <br>
-            <p>Whilst full stack web development is my key area of experience I am also confident performing data analysis using Python and its various libraries. 
-                Although my experience is not extensive in this area my understanding of Python and mathematics make data analytics an exciting field for me and in 
-                the past I have enojyed carrying out both descriptive and predictive analysis of various large data sets using libraries such as Pandas, NumPy, Matplotlib, Seaborn and Scikitlearn. </p>
-            <!--
-                <br>
-            <p>👉 I have had two previous careers. Firstly, as a civil engineer, and then as a high school teacher - teaching math, physics and engineering.</p>
-            <p>👉 I have proven experience working in many teams and with a large variety of stakeholders. I find it easy to communicate, work effectively and produce high quality work with a large range of people.</p>
-                -->
-        </div>
-    </section>
+
+    <div class="w-full max-w-5xl text-lg mx-auto mt-6 space-y-4 text-left px-1">
+        <p>I am a passionate problem solver and I love using software, math, and other technologies to create solutions to complex and interesting problems.</p>
+        <p>I am a proficient programmer and comfortable with a variety of modern, object-oriented languages. I have hands-on experience in full stack development and use industry-standard technology stacks. Currently, I work on Shoppie, an ecommerce app built with React, TypeScript, Express, and MySQL, where I handle all aspects of its development.</p>
+        <p>While my main focus is full stack web development, I am also skilled in data analysis using Python and libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.</p>
+    </div>
+</section>
 
 <!-- Qualifications Section -->
     <section class="w-full flex flex-col items-center gap-8 py-8 max-w-screen-xl rounded-2xl mx-auto">
@@ -278,20 +266,23 @@
                 </div>
             </div>
         </div>
-        <div class="py-5 px-8 bg-white shadow-2xl rounded-2xl w-full md:w-4/5 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="video-content">
-                <img src="./IMG/ShoppieLogov1.png" class="max-w-full max-h-64">
+        <div class="py-5 px-8 bg-white shadow-2xl rounded-2xl w-full md:w-4/5 max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="video-content col-span-1 mx-auto my-auto">
+                <img src="./IMG/stockexplorer.jpg" class="max-w-full max-h-64">
             </div>
-            <div class="text-content">
-                <h1 class="text-4xl font-bold mb-4">Shoppie</h1>
-                <p>Shoppie is a price tracking software that allows users to save items on eccommerce stores and track their prices. 
-                    Users are then alerted via email when an item's price drops below their desired price. </p>
+            <div class="text-content col-span-2">
+                <h1 class="text-4xl font-bold mb-4">Stock Explorer App</h1>
+                <p>This university capstone project required me to build an application that allows users to browse stock data provided by a 3rd party API.</p>
+                <br>
+                <p>Whilst this application accesses an API it was mainly a front end development exercise using React and JavaScript. In addition to a web application an iOS mobile
+                    application was also developed using React Native and Expo. Whilst only the web version is shown hosted in the link below, the code for the mobile application
+                    can be found in the GitHub repository.</p>
                 <div class="flex justify-center gap-6 mt-4">
-                    <a href="https://example.com" target="_blank" class="text-black hover:text-violet-400 justify-center">
+                    <a href="https://github.com/jay-horvat/basic-stock-app" target="_blank" class="text-black hover:text-violet-400 justify-center">
                         <i class="fab fa-github fa-2x justify-center"></i>
                         <p>GitHub Repo</p>
                     </a>
-                    <a href="https://example.com" target="_blank">
+                    <a href="https://jay-horvat.github.io/basic-stock-app/" target="_blank">
                         <button class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-full">
                             See Live
                         </button>   
