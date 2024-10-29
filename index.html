@@ -48,9 +48,13 @@
 
     <div class="w-full max-w-5xl text-lg mx-auto mt-6 space-y-4 text-left px-1">
         <p>I am a passionate problem solver and I love using software, math, and other technologies to create solutions to complex and interesting problems.</p>
-        <p>I am a proficient programmer and comfortable with a variety of modern, object-oriented languages. I have hands-on experience in full stack development and use industry-standard technology stacks. Currently, I work on Shoppie, an ecommerce app built with React, TypeScript, Express, and MySQL, where I handle all aspects of its development.</p>
-        <p>While my main focus is full stack web development, I am also skilled in data analysis using Python and libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.</p>
+        <p>I am a proficient programmer and comfortable with a variety of modern, object-oriented languages. I have hands-on experience in full stack development 
+            and can use a variety of industry-standard technology stacks. Currently, I spend most of my time working on Shoppie, an ecommerce software products built 
+            with React, TypeScript, Express, and MySQL. I am the sole developer working on Shoppie and handle all aspects of its development.</p>
+        <p>While my main strength is full stack web development, I am also skilled in data analysis using Python and libraries such as Pandas, NumPy, 
+            Matplotlib, Seaborn, and Scikit-learn.</p>
     </div>
+
 </section>
 
 <!-- Qualifications Section -->
@@ -58,11 +62,10 @@
         <h1 class="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent text-4xl font-bold">
             Education and Software Skills</h1>
         <div class="grid grid-cols-1 md:grid-cols-5 gap-6 w-full px-4">
-            <!-- Qualifications Column -->
             <div class="col-span-2">
                 <h2 class="text-2xl text-white font-semibold mb-4">Education</h2>
                 <div class="flex flex-col gap-4">
-                    <!-- Degree Card 1 -->
+                    
                     <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
                         <img src="./IMG/qut.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
                         <div>
@@ -72,7 +75,6 @@
                         </div>
                     </div>
                     
-                    <!-- Degree Card 2 -->
                     <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
                         <img src="./IMG/jcu.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
                         <div>
@@ -82,7 +84,6 @@
                         </div>
                     </div>
 
-                    <!-- Degree Card 3 -->
                     <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-lg">
                         <img src="./IMG/une.png" alt="Institution Logo" class="w-12 h-12 object-cover rounded-lg">
                         <div>
@@ -94,7 +95,6 @@
                 </div>
             </div>
 
-            <!-- Skills Column -->
             <div class="col-span-3">
                 <h2 class="text-2xl font-semibold text-white mb-4">Software Skills</h2>
                 <div class="flex flex-col gap-4">
@@ -162,9 +162,7 @@
                     <div class="flex items-center gap-4 bg-gray-50 rounded-lg shadow-lg overflow-hidden">
                         <h2 class="text-xl w-40 font-semibold text-black mb-1 p-1">Other Technologies</h2>
                         <div id="carousel-container" class="relative overflow-x-scroll w-full touch-auto">
-                            <!-- Inner container for the items -->
                             <div id="technology-container" class="flex gap-4 p-3 whitespace-nowrap flex-nowrap">
-                                <!-- JavaScript will dynamically populate this section -->
                             </div>
                         </div>
                     </div>
@@ -198,7 +196,6 @@
                             `;
                         });
 
-                        // JavaScript for auto-scrolling effect with user scroll handling
                         let scrollPosition = 0;
                         const scrollSpeed = 1;
                         let isUserScrolling = false;
@@ -217,17 +214,15 @@
                             requestAnimationFrame(autoScroll);
                         }
 
-                        // Event listeners to detect user scroll and pause auto-scroll
                         carouselContainer.addEventListener("scroll", () => {
                             isUserScrolling = true;
-                            scrollPosition = carouselContainer.scrollLeft; // Update scroll position to maintain continuity
-                            clearTimeout(window.scrollTimeout); // Clear any existing timeout
+                            scrollPosition = carouselContainer.scrollLeft; 
+                            clearTimeout(window.scrollTimeout); 
                             window.scrollTimeout = setTimeout(() => {
-                                isUserScrolling = false; // Resume auto-scroll after user stops scrolling
-                            }, 10); // Adjust the delay as needed
+                                isUserScrolling = false; 
+                            }, 10); 
                         });
 
-                        // Start the auto-scroll
                         autoScroll();
                     </script>                                
                 </div>
