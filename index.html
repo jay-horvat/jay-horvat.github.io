@@ -109,7 +109,23 @@
                         { name: "Python", img: "./IMG/python.png", bgColor: "bg-yellow-300", textColor: "text-black" },
                         { name: "C#", img: "./IMG/csharp.png", bgColor: "bg-violet-400", textColor: "text-black", width: "w-20" },
                         { name: "TypeScript", img: "./IMG/ts.png", bgColor: "bg-blue-500", textColor: "text-black" },
-                        { name: "SQL", img: "./IMG/sql.png", bgColor: "bg-blue-300", textColor: "text-black" }
+                        { name: "SQL", img: "./IMG/sql.png", bgColor: "bg-blue-300", textColor: "text-black" },
+                        { name: "React", img: "./IMG/react.png", bgColor: "bg-blue-300", textColor: "text-black" },
+                        { name: "Node.js", img: "./IMG/nodejs.png", bgColor: "bg-green-600", textColor: "text-black" },
+                        { name: "Express.js", img: "./IMG/express.png", bgColor: "bg-gray-800", textColor: "text-white" },
+                        { name: "Flask", img: "./IMG/flask.png", bgColor: "bg-gray-800", textColor: "text-white" },
+                        { name: "MySQL", img: "./IMG/mysql.png", bgColor: "bg-orange-400", textColor: "text-black" },
+                        { name: "Git", img: "./IMG/git.png", bgColor: "bg-orange-500", textColor: "text-black" },
+                        { name: "GitHub", img: "./IMG/github.png", bgColor: "bg-gray-900", textColor: "text-white" },
+                        { name: "Selenium", img: "./IMG/selenium.png", bgColor: "bg-green-600", textColor: "text-white" },
+                        { name: "Pandas", img: "./IMG/pandas.png", bgColor: "bg-blue-800", textColor: "text-white" },
+                        { name: "NumPy", img: "./IMG/numpy.png", bgColor: "bg-blue-300", textColor: "text-black" },
+                        { name: "Matplotlib", img: "./IMG/matplotlib.png", bgColor: "bg-orange-400", textColor: "text-black" },
+                        { name: "Seaborn", img: "./IMG/seaborn.png", bgColor: "bg-gray-400", textColor: "text-black" },
+                        { name: "Scikit-learn", img: "./IMG/scikitlearn.png", bgColor: "bg-blue-300", textColor: "text-black" },
+                        { name: "Tailwind", img: "./IMG/tailwind.png", bgColor: "bg-blue-400", textColor: "text-black" },
+                        { name: "Bootstrap", img: "./IMG/bootstrap.png", bgColor: "bg-violet-400", textColor: "text-black" }
+                        
                     ];
                     
                     const programmingContainer = document.getElementById("programming-container");
@@ -127,100 +143,7 @@
                         `;
                     });
                     </script>
-                    <!--Dev technologies card-->
-                    <div class="flex items-center gap-4 bg-gray-50 rounded-lg shadow-lg">
-                        <h2 class="text-xl w-40 font-semibold text-black mb-1 p-1">Development Technologies</h2>
-                        <div id="development-technology-container" class="flex flex-wrap items-center gap-3 p-1"></div>
-                    </div>
-                    
-                    <script>
-                        const developmentTechnologies = [
-                            { name: "React", img: "./IMG/react.png", bgColor: "bg-blue-300", textColor: "text-black" },
-                            { name: "Node.js", img: "./IMG/nodejs.png", bgColor: "bg-green-600", textColor: "text-black" },
-                            { name: "Express.js", img: "./IMG/express.png", bgColor: "bg-gray-800", textColor: "text-white" },
-                            { name: "Flask", img: "./IMG/flask.png", bgColor: "bg-gray-800", textColor: "text-white" },
-                            { name: "MySQL", img: "./IMG/mysql.png", bgColor: "bg-orange-400", textColor: "text-black" }
-                        ];
-                        const developmentContainer = document.getElementById("development-technology-container");
-            
-                        developmentTechnologies.forEach(tech => {
-                            developmentContainer.innerHTML += `
-                                <div class="${tech.bgColor} flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
-                                    <div class="bg-white rounded-lg">
-                                        <img src="${tech.img}" alt="${tech.name}" class="w-12 h-12 object-cover rounded-lg border border-black">
-                                    </div>
-                                    <p class="${tech.textColor}">${tech.name}</p>
-                                </div>
-                            `;
-                        });
-                    </script>
-                    <!-- Other technologies card -->
-                    <div class="flex items-center gap-4 bg-gray-50 rounded-lg shadow-lg overflow-hidden">
-                        <h2 class="text-xl w-40 font-semibold text-black mb-1 p-1">Other Technologies</h2>
-                        <div id="carousel-container" class="relative overflow-x-scroll w-full touch-auto">
-                            <div id="technology-container" class="flex gap-4 p-3 whitespace-nowrap flex-nowrap">
-                            </div>
-                        </div>
-                    </div>
-
-                    <script>
-                        const technologies = [
-                            { name: "Git", img: "./IMG/git.png", bgColor: "bg-orange-500", textColor: "text-black" },
-                            { name: "GitHub", img: "./IMG/github.png", bgColor: "bg-gray-900", textColor: "text-white" },
-                            { name: "Selenium", img: "./IMG/selenium.png", bgColor: "bg-green-600", textColor: "text-white" },
-                            { name: "Pandas", img: "./IMG/pandas.png", bgColor: "bg-blue-800", textColor: "text-white" },
-                            { name: "NumPy", img: "./IMG/numpy.png", bgColor: "bg-blue-300", textColor: "text-black" },
-                            { name: "Matplotlib", img: "./IMG/matplotlib.png", bgColor: "bg-orange-400", textColor: "text-black" },
-                            { name: "Seaborn", img: "./IMG/seaborn.png", bgColor: "bg-gray-400", textColor: "text-black" },
-                            { name: "Scikit-learn", img: "./IMG/scikitlearn.png", bgColor: "bg-blue-300", textColor: "text-black" },
-                            { name: "Tailwind", img: "./IMG/tailwind.png", bgColor: "bg-blue-400", textColor: "text-black" },
-                            { name: "Bootstrap", img: "./IMG/bootstrap.png", bgColor: "bg-violet-400", textColor: "text-black" }
-                        ];
-                        const container = document.getElementById("technology-container");
-                        const carouselContainer = document.getElementById("carousel-container");
-
-                        // Duplicate technologies to allow smooth infinite scrolling
-                        const repeatedTechnologies = [...technologies, ...technologies];
-                        repeatedTechnologies.forEach(tech => {
-                            container.innerHTML += `
-                                <div class="${tech.bgColor} min-w-max flex items-center gap-1 p-1 inline-block rounded-lg shadow-lg">
-                                    <div class="bg-white rounded-lg">
-                                        <img src="${tech.img}" alt="${tech.name}" class="w-12 h-12 object-cover rounded-lg border border-black">
-                                    </div>
-                                    <p class="${tech.textColor}">${tech.name}</p>
-                                </div>
-                            `;
-                        });
-
-                        let scrollPosition = 0;
-                        const scrollSpeed = 1;
-                        let isUserScrolling = false;
-
-                        // Auto-scrolling function
-                        function autoScroll() {
-                            if (!isUserScrolling) {
-                                scrollPosition += scrollSpeed;
-                                carouselContainer.scrollLeft = scrollPosition;
-
-                                // Reset scroll to the beginning to create an infinite loop effect
-                                if (scrollPosition >= container.scrollWidth / 2) {
-                                    scrollPosition = 0;
-                                }
-                            }
-                            requestAnimationFrame(autoScroll);
-                        }
-
-                        carouselContainer.addEventListener("scroll", () => {
-                            isUserScrolling = true;
-                            scrollPosition = carouselContainer.scrollLeft; 
-                            clearTimeout(window.scrollTimeout); 
-                            window.scrollTimeout = setTimeout(() => {
-                                isUserScrolling = false; 
-                            }, 10); 
-                        });
-
-                        autoScroll();
-                    </script>                                
+                                           
                 </div>
             </div>
         </div>
